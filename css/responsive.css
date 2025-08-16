@@ -1,0 +1,95 @@
+@media screen and (max-width: 800px) {
+    .nav_header .hamburger {
+        display: flex;
+    }
+
+    /* adding responsive menubar in active class. */
+    nav .items {
+        gap: 20px;
+        width: 100%;
+        min-height: 80vh;
+        background-color: rgba(255, 0, 76, 0.199);
+
+        position: absolute;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 30px;
+        width: 90%;
+        min-height: 50%;
+        background-color: white;
+        border-top: 4px solid blue;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+        transition: all 0.4s;
+        visibility: hidden;
+        opacity: 0;
+        scale: 0;
+
+    }
+
+    nav.active .items {
+        display: flex;
+        top: 100px;
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+
+    .items ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+
+}
+
+@media (width > 600px) {
+    .step-grid-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career_main_container .career_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all_jobs_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career_guide_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (width > 1100px) {
+    .step-grid-cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .step_card:nth-child(2n-1){
+        transform: translateY(-2rem);
+    }
+
+    .career_main_container .career_cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .all_jobs_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .career_guide_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
